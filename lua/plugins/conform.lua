@@ -4,7 +4,7 @@ return { -- Autoformat
     {
       "<leader>cf",
       function()
-        require("conform").format({ async = true, lsp_fallback = true })
+        require("conform").format({ async = false, quite = false, lsp_fallback = true })
       end,
       mode = "",
       desc = "[F]ormat buffer",
@@ -13,7 +13,6 @@ return { -- Autoformat
 
   opts = {
     formatters_by_ft = {
-      lua = { "stylua" },
       sh = { "shfmt" },
       html = { "djlint" },
       go = { "gofmt", "goimports" },
@@ -28,14 +27,12 @@ return { -- Autoformat
     },
     formatters = {
       clang_format = {
-        prepend_args = {
+        args = {
           "--style=file:" .. vim.fn.expand("~/.config/nvim/.clang-format"),
           "--fallback-style=Google",
         },
       },
-      stylua = {
-        args = { "-f", vim.fn.expand("~/.config/nvim/stylua.toml") },
-      },
+
     },
   },
 }
