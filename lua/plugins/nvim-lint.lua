@@ -11,7 +11,7 @@ return {
       }
       -- Ensure clangtidy uses the .clang-tidy file in the config directory
       lint.linters.clangtidy.args = {
-        "--config-file=/home/bi/.config/nvim/.clang-tidy"
+        "--config-file=" .. os.getenv("HOME") .. "/.config/nvim/.clang-tidy",
       }
     end,
   },

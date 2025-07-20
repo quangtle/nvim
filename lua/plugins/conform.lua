@@ -28,10 +28,13 @@ return { -- Autoformat
     },
     formatters = {
       clang_format = {
-        prepend_args = { "--style=file:/home/bi/.config/nvim/.clang-format", "--fallback-style=Google" },
+        prepend_args = {
+          "--style=file:" .. vim.fn.expand("~/.config/nvim/.clang-format"),
+          "--fallback-style=Google",
+        },
       },
       stylua = {
-        args = { "--config-path", "/home/bi/.config/nvim/stylua.toml" },
+        args = { "-f", vim.fn.expand("~/.config/nvim/stylua.toml") },
       },
     },
   },
