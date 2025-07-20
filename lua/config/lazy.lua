@@ -71,3 +71,6 @@ vim.api.nvim_create_autocmd('BufEnter', {
 
 -- Linting
 vim.keymap.set('n', '<leader>l', function() require('lint').try_lint() end, { desc = 'Lint file' })
+
+-- LSP keymaps
+vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename)

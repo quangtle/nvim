@@ -1,5 +1,7 @@
 {
+  "blink.cmp": { "branch": "main", "commit": "586ee87534f5bf65f1c8dea2d1da2a57e8cddd36" },
   "conform.nvim": { "branch": "master", "commit": "973f3cb73887d510321653044791d7937c7ec0fa" },
+  "friendly-snippets": { "branch": "main", "commit": "572f5660cf05f8cd8834e096d7b4c921ba18e175" },
   "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
   "makeit.nvim": { "branch": "main", "commit": "5859c9d8936528ff5f88f0fc2de7daee0dbcd9b8" },
   "nvim-lint": { "branch": "master", "commit": "52e603c4b66f2fb4f268916725076e6c3ae412fd" },
