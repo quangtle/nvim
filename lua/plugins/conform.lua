@@ -4,7 +4,11 @@ return { -- Autoformat
     {
       "<leader>cf",
       function()
-        require("conform").format({ async = false, quite = false, lsp_fallback = true })
+        require("conform").format({
+          async = false,
+          quite = false,
+          lsp_fallback = true,
+        })
       end,
       mode = "",
       desc = "[F]ormat buffer",
@@ -32,7 +36,6 @@ return { -- Autoformat
           "--fallback-style=Google",
         },
       },
-
     },
   },
 }
